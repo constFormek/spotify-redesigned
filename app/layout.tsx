@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const satoshi = localFont({
+  src: [
+    {
+      path: '../public/fonts/Satoshi-Black.otf',
+    },
+    {
+      path: '../public/fonts/Satoshi-Bold.otf',
+    },
+    {
+      path: '../public/fonts/Satoshi-Light.otf',
+    },
+    {
+      path: '../public/fonts/Satoshi-Medium.otf',
+    },
+    {
+      path: '../public/fonts/Satoshi-Regular.otf',
+    },
+  ],
+  variable: '--font-satoshi',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${satoshi.variable} antialiased`}
       >
         {children}
       </body>
