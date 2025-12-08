@@ -1,3 +1,5 @@
+import { Artist, Close, FullScreen } from "@/components/icons/small";
+import { Downvote } from "@/components/icons/big";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +18,14 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>
+          <h2>Test the Icons TSX</h2>
+          <div className="">
+            <Artist className="w-30 h-30 text-amber-400" />
+            <Close className="h-6 w-6 text-red-400"/>
+            <FullScreen className="w-30 h-30 text-green-600" />
+            <Downvote className="w-30 h-30 text-blue-600" />
+            
+          </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a
