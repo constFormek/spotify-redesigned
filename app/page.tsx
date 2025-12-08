@@ -20,8 +20,9 @@ export default function Home() {
           <h2>Test the Icons TSX</h2>
           <div className="">
             <Artist className="w-30 h-30 text-amber-400" />
-            <Close className="w-30 h-30 " />
+            <Close className="h-6 w-6 text-red-400"/>
             <FullScreen className="w-30 h-30 text-green-600" />
+            
           </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}

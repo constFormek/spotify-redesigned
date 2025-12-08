@@ -3,11 +3,15 @@ type Props = {
   className?: string,
 };
 export default function SvgVolume({ className = "" }: Props) {
-  // Detect if user applies a color class (Tailwind text-*)
-  const shouldOverrideColor = /text-|fill-|stroke-/.test(className);
   return React.cloneElement(
-    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="none">
-      <g stroke="#898989" clipPath="url(#Volume_svg__a)">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <g stroke="currentColor" clipPath="url(#Volume_svg__a)">
         <path
           strokeWidth={1.2}
           d="M7.635 14.147c-1.769-.885-1.769-3.409 0-4.293L12.82 7.26a.4.4 0 0 1 .58.357v8.764a.4.4 0 0 1-.58.357z"
@@ -17,7 +21,7 @@ export default function SvgVolume({ className = "" }: Props) {
           d="M16 15a2.5 2.5 0 0 0 1.247-.824c.482-.577.753-1.36.753-2.176s-.27-1.599-.753-2.176A2.5 2.5 0 0 0 16 9"
         />
         <path
-          fill="#898989"
+          fill="currentColor"
           strokeWidth={0.5}
           d="M15.5 11.696c0-.108.091-.2.191-.158a.5.5 0 0 1 0 .924c-.1.041-.191-.05-.191-.158v-.608Z"
         />
@@ -30,12 +34,10 @@ export default function SvgVolume({ className = "" }: Props) {
     </svg>,
     {
       className,
-      fill: "none",
-      // if user apply class text-*, replace stroke with currentColor
-      stroke: shouldOverrideColor ? "currentColor" : undefined,
       width: "1em",
       height: "1em",
-      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
     }
   );
 }
