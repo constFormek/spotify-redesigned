@@ -1,4 +1,5 @@
 import { Artist, Close, FullScreen } from "@/components/icons/small";
+import { Downvote } from "@/components/icons/big";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
             <Artist className="w-30 h-30 text-amber-400" />
             <Close className="h-6 w-6 text-red-400"/>
             <FullScreen className="w-30 h-30 text-green-600" />
+            <Downvote className="w-30 h-30 text-blue-600" />
             
           </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
