@@ -1,6 +1,7 @@
 # TODO
 
-- [ ] - set up css variables
-- [ ] - download fonts, and set them up
-- [ ] - set up correct file structure for components, hooks, etc.
-- [ ] - download needed icons from figma file and convert them into components
+- [ ] - create a wrapper for pc (with grid layout)
+- [ ] - create a wrapper for mobile (with flex layout)
+- [ ] - create files for all main components (library, navbar, playbar)
+
+
