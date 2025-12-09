@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
+import DesktopLayout from "@/components/layout/DesktopLayout";
 
 const satoshi = localFont({
   src: [
@@ -38,7 +39,15 @@ export default function RootLayout({
       <body
         className={`${satoshi.variable} antialiased`}
       >
-        {children}
+        <DesktopLayout>
+          <div className="w-full h-full border-black border row-span-3">library</div>
+
+          <div className="w-full h-full border-black border">navbar</div>
+          
+          {children}
+
+          <div className="w-full h-full border-black border ">playbar</div>
+        </DesktopLayout>
       </body>
     </html>
   );
