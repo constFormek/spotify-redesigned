@@ -1,9 +1,9 @@
-import { Artist, Close, FullScreen } from "@/components/icons/small";
-import { Downvote } from "@/components/icons/big";
-import Image from "next/image";
-
-export default function Home() {
+export default function Home () {
   return (
-    <div className="border border-black">asdsada</div>
-  );
+    <div className=' flex flex-col items-center'>
+      {Array.from({ length: 1000 }, (_, i) => (
+        <div key={i}>{i + 1}</div>
+      ))}
+    </div>
+  )
 }
