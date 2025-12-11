@@ -30,8 +30,8 @@ export default function NavItem ({
         <Icon className='text-[40px] text-foreground-secondary' />
 
         <span
-          className={`text-[10px] ${
-            active ? 'text-white' : 'text-neutral-400'
+          className={`text-small ${
+            active ? 'text-foreground-secondary' : 'text-neutral-400'
           }`}
         >
           {label}

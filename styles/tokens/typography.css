@@ -1,0 +1,85 @@
+/* ============================================
+   TYPOGRAPHY BASE TOKENS
+============================================ */
+
+:root {
+  /* Font family */
+  --font-satoshi: "Satoshi", sans-serif;
+
+  /* Font sizes */
+  --fs-0: 12px;
+  --fs-1: 14px;
+  --fs-2: 16px;
+  --fs-3: 18px;
+  --fs-4: 20px;
+
+  /* Font weights */
+  --fw-satoshi-bold: 700;
+  --fw-satoshi-regular: 400;
+  --fw-satoshi-medium: 500;
+
+  /* Additional token values */
+  --lh-auto: normal; /* Figma AUTO - CSS 'normal' */
+  --ls-0: 3%;        /* letter-spacing: 3% */
+  --ps-0: 0px;       /* paragraph spacing */
+  --pi-0: 0px;       /* paragraph indent */
+  --text-case-none: none;
+  --text-decoration-none: none;
+}
+
+/* ============================================
+   TAILWIND UTILITIES (AUTO-GENERATED STYLE)
+============================================ */
+
+@layer utilities {
+
+  .text-h3 {
+    font-family: var(--font-satoshi);
+    font-weight: var(--fw-satoshi-bold);
+    font-size: var(--fs-4);
+    line-height: var(--lh-auto);
+    letter-spacing: var(--ls-0);
+    text-transform: var(--text-case-none);
+    text-decoration: var(--text-decoration-none);
+  }
+
+  .text-h4 {
+    font-family: var(--font-satoshi);
+    font-weight: var(--fw-satoshi-medium);
+    font-size: var(--fs-3);
+    line-height: var(--lh-auto);
+    letter-spacing: var(--ls-0);
+    text-transform: var(--text-case-none);
+    text-decoration: var(--text-decoration-none);
+  }
+
+  .text-p {
+    font-family: var(--font-satoshi);
+    font-weight: var(--fw-satoshi-regular);
+    font-size: var(--fs-2);
+    line-height: var(--lh-auto);
+    letter-spacing: var(--ls-0);
+    text-transform: var(--text-case-none);
+    text-decoration: var(--text-decoration-none);
+  }
+
+  .text-sub {
+    font-family: var(--font-satoshi);
+    font-weight: var(--fw-satoshi-regular);
+    font-size: var(--fs-1);
+    line-height: var(--lh-auto);
+    letter-spacing: var(--ls-0);
+    text-transform: var(--text-case-none);
+    text-decoration: var(--text-decoration-none);
+  }
+
+  .text-small {
+    font-family: var(--font-satoshi);
+    font-weight: var(--fw-satoshi-regular);
+    font-size: var(--fs-0);
+    line-height: var(--lh-auto);
+    letter-spacing: var(--ls-0);
+    text-transform: var(--text-case-none);
+    text-decoration: var(--text-decoration-none);
+  }
+}
