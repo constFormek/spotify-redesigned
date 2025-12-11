@@ -26,11 +26,11 @@ export default function NavItem ({
       className='flex-1'
       aria-current={active ? 'page' : undefined}
     >
-      <div className='flex flex-col items-center justify-center py-2'>
-        <Icon className='text-[40px]' />
+      <div className='flex flex-col items-center justify-center'>
+        <Icon className='text-[40px] text-foreground-secondary' />
 
         <span
-          className={`text-[10px] mt-1 ${
+          className={`text-[10px] ${
             active ? 'text-white' : 'text-neutral-400'
           }`}
         >

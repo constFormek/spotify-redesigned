@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
-import DesktopLayout from '@/components/layout/DesktopLayout'
-import MobileLayout from '@/components/layout/MobileLayout'
 import RootClientWrapper from './RootClientWrapper'
 
 const satoshi = localFont({
